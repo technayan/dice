@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 250px;
+            text-align: center;
+        }
+        p {
+            margin-top: -15px;
+        }
+        .dice {
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #dice-img {
+            margin-left: 50px;
+            width: 100%;
+        }
+        .btn-group {
+            margin-top: 40px;
+        }
+        #roll,#reset {
+            font-size: 20px;
+            margin-top: 100px;
+            margin: 20px 50px;
+            width: 150px;
+            height: 60px;
+            font-weight: bold;
+            padding-top: 5px;
+            color: #fff;
+            border:none;
+            transition: 1s ease;
+        } 
+        #roll {
+            background: rgb(35, 144, 247);
+        }
+        #reset {
+            background: rgb(255, 173, 21);
+        }
+        #roll:focus {
+            background: red;
+        }
+        h3 {
+            margin-top: 50px;
+            font-size: 28px;
+            font-weight: bold;  
+        }
+        #counter {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Roll the Dice !</h2>
+        <p>Made by Nayan</p>
+        <div class="dice">
+            <img src="" alt="" id="dice-img">
+        </div>
+        
+        <h3>Counter :<span id="counter">0</span></h3>
+
+
+        <div class="btn-group">
+            <button id="roll" onclick="setImage()">Roll</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
